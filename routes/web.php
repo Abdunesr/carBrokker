@@ -6,14 +6,16 @@ use App\Http\Controllers\carControllers;
 use App\Http\Controllers\productController;
 use App\Http\Controllers\showCarController; */
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\loginController;
+use App\Http\Controllers\signupController;
 use Illuminate\Support\Facades\Route;
 
 
 
 
 Route::get("/",[HomeController::class,'index'])->name('home');
-
-
+Route::get('/signup',[signupController::class,'create']);
+Route::get('/login',[loginController::class,'create']);
 
 
 
