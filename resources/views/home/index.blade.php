@@ -2,7 +2,7 @@
 
 @section('titel','Home Page')
 
-<x-app-layout titel="Home page" >
+<x-app-layout titel="Home page"  >
   <x-card  >
     <x-slot:titel>This is the first componet</x-slot>
     The first componet
@@ -667,11 +667,10 @@
       </section>
       <!--/ New Cars -->
     </main>
-    @section('footerLinks')
-@parent
 <a href="#">Link 3</a>
 <a href="#">Linl 4</a>
-@endsection
+
+
 </x-app-layout>
 
  
